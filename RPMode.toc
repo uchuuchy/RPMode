@@ -1,0 +1,3 @@
+## Notes: An efficient and lightweight roleplaying immersion system.
+
+RPMode.xml

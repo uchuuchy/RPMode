@@ -1,0 +1,39 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Script file="RPmode.lua" />
+	
+<Frame name="RPMode" parent="WorldFrame">
+	<Size>
+		<AbsDimension x="0" y="0" />
+	</Size>
+	<Scripts>
+		<OnUpdate>RPMode.OnUpdate(arg1);</OnUpdate>
+	</Scripts>
+  </Frame>
+	<Button name="RPModeButton" movable="true" parent="ChatFrame1">
+		<Size>
+			<AbsDimension x="32" y="32"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOP" relativeTo="$parentBottomButton" relativePoint="BOTTOM">
+				<Offset>
+					<AbsDimension x="0" y="2"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Scripts>
+			<OnClick>
+				RPMode.ToggleRPMode();
+			</OnClick>
+			<OnDragStart>
+				this:StartMoving();
+			</OnDragStart>
+			<OnDragStop>
+				this:StopMovingOrSizing();
+			</OnDragStop>
+		</Scripts>
+		<NormalTexture file="Interface\AddOns\RPMode\Graphics\RPModeButtonUp"/>
+		<PushedTexture file="Interface\AddOns\RPMode\Graphics\RPModeButtonDown"/>
+		<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+	</Button>
+
+</Ui>
