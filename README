@@ -1,0 +1,3 @@
+RPMode is an addon for the 1.12.1 World of Warcraft client. It is hacked-together from files and code from ImmersionRP. I was frustrated that no other addon provided the same functionality that ImmersionRP did when it came to UI changes. After installing this addon, you will find next to your chat frame a new button labeled, "RP." Clicking this button toggles RPMode. When RPMode is enabled, it will hide your entire UI except for the chat frame. This allows you to continue to RP without having the rest of the UI on the screen creating a more immersive to experience.
+
+To install, head to the releases page, download the 7zip file, and extract to your "/Interface/Addons" directory. 
